@@ -1,0 +1,24 @@
+[submodule "pack/git/start/fzf"]
+	path = pack/git/start/fzf
+	url = https://github.com/junegunn/fzf
+[submodule "pack/git/start/ayu-vim"]
+	path = pack/git/start/ayu-vim
+	url = https://github.com/zkmrgirish/ayu-vim
+[submodule "pack/git/start/lightline.vim"]
+	path = pack/git/start/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
+[submodule "pack/git/start/vim-go"]
+	path = pack/git/start/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "pack/git/start/unite.vim"]
+	path = pack/git/start/unite.vim
+	url = https://github.com/shougo/unite.vim
+[submodule "pack/git/start/vimfiler.vim"]
+	path = pack/git/start/vimfiler.vim
+	url = https://github.com/shougo/vimfiler.vim
+[submodule "pack/git/start/fzf.vim"]
+	path = pack/git/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "pack/git/start/vimwiki"]
+	path = pack/git/start/vimwiki
+	url = https://github.com/vimwiki/vimwiki
