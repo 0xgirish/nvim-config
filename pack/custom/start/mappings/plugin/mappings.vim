@@ -40,7 +40,28 @@ noremap gj G
 noremap gh 0
 noremap gl $
 
+" For FZF Buffer
+noremap <Leader>ls :Buffers<CR>
+noremap <Leader>lf :Files<CR>
 
+" some important navigation mappings
+noremap <Leader>T /TODO:/e<cr>
+
+" move windows
+nnoremap <Leader><Leader><Tab> <C-w>L<C-w><C-w>
+
+" For comment and uncomment
+noremap <C-n> <S-v>:norm 
+vnoremap <C-n> :norm 
+
+inoremap <Leader><Tab> <Esc>/<++><CR>"_c4l
+
+" some mappings for less key press
+noremap <Space> :
+map Y y$
+
+nnoremap <Leader>s :set invspell<cr>
+noremap <Leader>r :VimFilerExplorer -winwidth=25<CR>
 
 " get env variable
 command! -nargs=+ Env echo getenv(<f-args>)
