@@ -1,1 +1,0 @@
-# personal sensible.vim (zkmrgirish)
