@@ -63,11 +63,39 @@ map Y y$
 nnoremap <Leader>s :set invspell<cr>
 noremap <Leader>r :VimFilerExplorer -winwidth=25<CR>
 
-" get env variable
+" toogle number, relativenumber, hlsearch
+noremap <Leader>N :set invnumber<CR>
+nnoremap <Leader>R :set invrelativenumber<CR>
+nnoremap <Leader>H :set invhlsearch<CR>
+
+" use arrow keys to navigate windows
+map <Left> <C-w>h
+map <Down> <C-w>j
+map <Up> <C-w>k
+map <Right> <C-w>l
+
+" change to different window
+nnoremap <Tab> <C-w><C-w>
+
+" auto-pairs like emulation
+inoremap {<CR> {<CR>}<Esc>O
+inoremap (<CR> (<CR>)<Esc>O
+inoremap [<CR> [<CR>]<Esc>O
+
+" Use <Esc> to change to normal mode in neovim terminal
+tnoremap <Esc> <C-\><C-n>
+noremap <Leader><Tab> <Esc>/<++><Enter>"_c4l
+
+nnoremap <Leader>n :cnext<CR>
+nnoremap <Leader>p :cprev<CR>
+
+" find a file and show in vertical split
+cnoreabbrev <expr> vfind ((getcmdtype() is# ':' && getcmdline() is# 'vfind')?('vertical sfind'):('vfind'))
+iab <expr> cdate strftime('%d %b, %A')
+
+
+" some use full commands
 command! -nargs=+ Env echo getenv(<f-args>)
-
-" rename file
 command! -nargs=+ -complete=file Rename call rename(<f-args>)
-
 command Mks mks! session.vim
 command Ctags call system('ctags -R')

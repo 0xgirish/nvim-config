@@ -54,32 +54,6 @@ set history=100
 set t_Co=256
 " set statusline=%f\ \%{strftime('%I:%M\ %p,\ %A')}\ %h%w%m%r\ %=%(%l,%c%V\ %=\ %P%)
 
-" toogle number, relativenumber, hlsearch
-noremap <Leader>N :set invnumber<CR>
-nnoremap <Leader>R :set invrelativenumber<CR>
-nnoremap <Leader>H :set invhlsearch<CR>
-
-" use arrow keys to navigate windows
-map <Left> <C-w>h
-map <Down> <C-w>j
-map <Up> <C-w>k
-map <Right> <C-w>l
-
-" change to different window
-nnoremap <Tab> <C-w><C-w>
-
-" auto-pairs like emulation
-inoremap {<CR> {<CR>}<Esc>O
-inoremap (<CR> (<CR>)<Esc>O
-inoremap [<CR> [<CR>]<Esc>O
-
-" Use <Esc> to change to normal mode in neovim terminal
-tnoremap <Esc> <C-\><C-n>
-noremap <Leader><Tab> <Esc>/<++><Enter>"_c4l
-
-nnoremap <Leader>n :cnext<CR>
-nnoremap <Leader>p :cprev<CR>
-
 " some autocmd
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
@@ -90,10 +64,6 @@ autocmd FileType markdown setlocal spell
 
 " Spell-check Git messages
 autocmd FileType gitcommit setlocal spell
-
-" find a file and show in vertical split
-cnoreabbrev <expr> vfind ((getcmdtype() is# ':' && getcmdline() is# 'vfind')?('vertical sfind'):('vfind'))
-iab <expr> cdate strftime('%d %b, %A')
 
 if (has("nvim"))
   "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
