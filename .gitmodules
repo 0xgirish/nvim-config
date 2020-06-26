@@ -8,7 +8,7 @@
 	path = pack/git/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
 [submodule "pack/git/start/vim-go"]
-	path = pack/git/start/vim-go
+	path = pack/git/opt/vim-go
 	url = https://github.com/fatih/vim-go
 [submodule "pack/git/start/unite.vim"]
 	path = pack/git/start/unite.vim

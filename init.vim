@@ -6,6 +6,9 @@ syntax on                  " Enable syntax highlighting.
 
 let mapleader = ","
 
+" add vim-go because adding it later does not work
+packadd vim-go
+
 " configure gopls? also disable guru in vim-go
 let g:go_def_mode='gopls'
 let g:go_rename_command = 'gopls'
@@ -13,7 +16,7 @@ let g:go_info_mode='gopls'
 let g:go_list_type = 'quickfix'
 let g:go_list_type_commands = {"GoBuild": "quickfix"}
 let g:go_doc_popup_window = 1
-let g:go_fmt_command = 'goimports'
+let g:go_fmt_command = 'gopls'
 let g:go_imports_mode = 'gopls'
 let g:go_implements_mode = 'gopls'
 
@@ -69,5 +72,6 @@ autocmd InsertEnter * se cul
 
 let ayucolor="dark"
 colorscheme ayu
+set tabstop=4
 
 set exrc
