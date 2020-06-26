@@ -38,6 +38,8 @@ set foldlevelstart=2
 set confirm                " confirm before quiting
 set modeline
 
+set grepprg=rg\ -n
+
 " set path to search files in subfolders and autocomplete on tab completion
 set path=**
 set wildmenu
@@ -46,7 +48,6 @@ set wildignore+=*.swp,~*,#*/**
 
 " relativenumber is just a showoff, nobody uses them
 " set number        " :set number when required
-set guicursor=
 set autoread
 set autowrite
 set history=100
@@ -76,20 +77,11 @@ endif
 
 hi Visual guifg=#7bcc7b guibg=#4f4f4f cterm=NONE gui=NONE
 hi Normal guibg=#404040 ctermbg=NONE guibg=NONE
-" hi Normal     ctermbg=NONE guibg=NONE
-" hi EndOfBuffer guifg=#404040
 hi StatusLineNC guibg=#4d4d4d guifg=#abcdef
-" hi StatusLine guibg=#4d4d4d guifg=#52f752
 hi LineNr     ctermbg=NONE guibg=#404040 guifg=#abcdef
-" hi TabLine    guifg=white  guibg=#4f4f4f
-" hi TabLineFill guifg=#4f4f4f
-" hi TabLineSel guifg=#abcdef
 hi CursorLine guibg=NONE
-" hi CursorLineNr guifg=#52ff52
 hi VertSplit  guibg=#404040 guifg=#4f4f4f
 hi SignColumn ctermbg=NONE guibg=NONE
 hi Pmenu    guifg=#abcdef guibg=#4f4f4f
 hi Search guifg=#52ff52 guibg=#4d4d4d
 hi Folded guifg=#f97f71 guibg=#4f4f4f
-" hi Comment gui=italic
-" hi ErrorMsg guifg=#52f752

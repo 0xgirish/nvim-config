@@ -99,3 +99,6 @@ command! -nargs=+ Env echo getenv(<f-args>)
 command! -nargs=+ -complete=file Rename call rename(<f-args>)
 command Mks mks! session.vim
 command Ctags call system('ctags -R')
+
+" bind \ (backward slash) to grep shortcut
+command -nargs=+ -complete=file -bar Rg silent! grep! <args>|cfirst
