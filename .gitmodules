@@ -22,3 +22,6 @@
 [submodule "pack/git/start/vimwiki"]
 	path = pack/git/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki
+[submodule "pack/git/start/copilot.vim"]
+	path = pack/git/start/copilot.vim
+	url = https://github.com/github/copilot.vim.git
